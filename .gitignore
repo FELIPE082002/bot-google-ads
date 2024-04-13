@@ -1,0 +1,8 @@
+# Ignorar archivos relacionados con el caché
+**/__pycache__
+*.pyc
+
+# Directorio del entorno virtual
+/venv
+
+~$Empresas.xlsx
