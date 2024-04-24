@@ -22,8 +22,7 @@ class Bot:
                     for palabra_clave in empresa['palabras_clave']:
                         if not self.ejecutando:
                             break
-                        buscar_palabra_clave(self.navegador, palabra_clave, empresa['url'])
-                        callback_incrementar()
+                        buscar_palabra_clave(self.navegador, palabra_clave, empresa['url'],callback_incrementar)
 
                     if self.navegador:
                         self.navegador.quit()
