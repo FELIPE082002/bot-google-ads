@@ -34,7 +34,6 @@ class InterfazContador:
             self.etiqueta_estado.config(text="Detenido", fg="red")
 
     def iniciar_bot(self):
-        # Usa el método iniciar de Bot para manejar el estado y la ejecución
         self.bot.iniciar(self.incrementar, self.actualizar_estado_bot_detenido)
         self.actualizar_estado(True)
 
@@ -46,5 +45,4 @@ class InterfazContador:
         self.contador.incrementar(self.actualizar_ui)
 
     def actualizar_estado_bot_detenido(self):
-        # Actualiza la UI cuando el bot se detiene
         self.actualizar_estado(False)
